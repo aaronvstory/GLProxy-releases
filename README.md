@@ -27,6 +27,9 @@ The apps have no paid code signature, so the system warns you the first time.
 - Keep all your proxies in one list. Assign each one to a device from there. Pin the ones you use most.
 - Test a new proxy in the bottom bar. A proxy that works is saved to the list.
 - See each proxy's exit IP, city, latency, and speed through the VPN and through your ISP, with past results.
+- See each exit IP's fraud scores from IPQS, Scamalytics and AbuseIPDB, each in its own column.
+
+![Speed test, with sample data](screenshot-speed.png)
 - Check that a device really leaves through the exit you chose.
 - Hide your own IP, Wi-Fi name, proxy logins, and MAC addresses with Privacy mode. It is on by default.
 - Get a notice for each new version, with what changed and a one-press update on Windows. On a Mac, the update opens this page.
