@@ -57,7 +57,8 @@ The app stops at sign-in with a clear message if your router cannot run it.
 - The app changes firewall rules on your router and starts two small programs there. **Turn all off** removes the routes.
 - Routes stay on the router when the app is closed.
 - **Signal Desk** checks an exit IP with the app owner's service. It runs only when you press Check, and each new exit IP uses one paid lookup of the owner. The service sees that exit IP and your computer's public IP.
-- Your proxy logins and the router password stay on your computer.
+- Your router password stays on your computer.
+- Proxy logins are stored on your computer and on your router. The router uses them to connect to the proxy.
 
 ## Source
 
