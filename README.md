@@ -1,6 +1,6 @@
 # GLProxy
 
-Desktop app for GL.iNet routers. See how each device reaches the internet, and send chosen devices through a SOCKS5 proxy.
+Desktop app for GL.iNet and OpenWrt routers. See how each device reaches the internet, and send chosen devices through a SOCKS5 proxy.
 
 ![GLProxy main window, with sample data](screenshot.png)
 
@@ -45,13 +45,16 @@ The apps have no paid code signature, so the system warns you the first time.
 
 ## What your router needs
 
-- GL.iNet firmware 4 with nftables.
+- One of these systems:
+  - GL.iNet firmware 4 with nftables.
+  - Plain OpenWrt 22.03 or newer, 25.12 included. Flow offloading must be off: Network > Firewall > Routing/NAT Offloading.
 - One of these CPUs:
   - 64-bit ARM: Flint, Flint 2, Slate AX, Beryl AX, Brume 2.
   - MIPS: Mudi (GL-E750), Slate (AR750S), Shadow, Puli.
   - Little-endian MIPS: Mango, Beryl (MT1300).
   - 32-bit ARM (ARMv7).
-- SSH on. The password is the admin panel password.
+  - x86_64 (OpenWrt on a PC or a virtual machine).
+- SSH on. The password is the router's admin password.
 - A VPN client is optional.
 - Internet on the router the first time you press Apply. Some routers, such as the Mudi, need a package that the app installs then.
 
@@ -60,8 +63,11 @@ The app stops at sign-in with a clear message if your router cannot run it.
 ## What has been tested
 
 - **Tested:** GL-AXT1800, firmware 4.8.3, with a VPN client.
-- **Tested in an emulator only:** MIPS (OpenWrt 22.03.4, the same system as the Mudi).
-- **Not tested on a real router:** MIPS, 32-bit ARM, a router with no VPN client, and other models. Please report what you find.
+- **Tested in an emulator only:**
+  - MIPS, OpenWrt 22.03 (the same system as the Mudi), with no VPN client.
+  - Plain OpenWrt 24.10 and 25.12 on x86_64, with a WireGuard VPN and with no VPN.
+- **Not tested on a real router:** plain OpenWrt, MIPS, 32-bit ARM, a router with no VPN client, and other models. Please report what you find.
+- **Not supported:** stock ASUS, Netgear and TP-Link firmware, and OpenWrt forks such as ImmortalWrt. The app says so at sign-in.
 
 ## Before you use it
 
