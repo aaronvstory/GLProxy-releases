@@ -67,7 +67,7 @@ The app stops at sign-in with a clear message if your router cannot run it.
   - MIPS, OpenWrt 22.03 (the same system as the Mudi), with no VPN client.
   - Plain OpenWrt 24.10 and 25.12 on x86_64, with a WireGuard VPN and with no VPN.
 - **Not tested on a real router:** plain OpenWrt, MIPS, 32-bit ARM, a router with no VPN client, and other models. Please report what you find.
-- **Not supported:** stock ASUS, Netgear and TP-Link firmware, and OpenWrt forks such as ImmortalWrt. The app says so at sign-in.
+- **Not supported:** stock ASUS, Netgear and TP-Link firmware, and OpenWrt-based vendor firmware such as ImmortalWrt or Teltonika RutOS. Turris OS 7 or newer works. The app says so at sign-in.
 
 ## Before you use it
 
